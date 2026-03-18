@@ -33,6 +33,7 @@ TransactionsIngest/
 ### Steps
 ```bash
 # Clone the repository
+git clone https://github.com/harshavardhankoramati-netizen/TransactionsIngest
 cd TransactionsIngest
 
 # Apply database migrations
