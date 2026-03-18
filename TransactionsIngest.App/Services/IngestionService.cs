@@ -43,11 +43,10 @@ public class IngestionService
                     // Existing transaction
                     if (existing.Status=="Finalized")
                         continue;
-                    // Detect field-level changes
+                    // Detect changes
                     var changes=DetectChanges(existing, incomingTx);
                     if (changes.Any())
                     {
-                        // Apply changes
                         existing.CardLast4=incomingTx.CardLast4;
                         existing.LocationCode=incomingTx.LocationCode;
                         existing.ProductName=incomingTx.ProductName;
@@ -55,7 +54,7 @@ public class IngestionService
                         existing.TransactionTime=incomingTx.TransactionTime;
                         existing.Status="Active";
                         existing.LastUpdatedAt = DateTime.UtcNow;
-                        // Record each changed field in audit
+                        // Store each changed field
                         foreach (var change in changes)
                         {
                             _db.TransactionAudits.Add(new TransactionAudit
@@ -72,7 +71,7 @@ public class IngestionService
                 }
             }
             await _db.SaveChangesAsync();
-            // Revoke transactions missing from snapshot but still within 24 hours
+            // Revoke transactions that are missing from snapshot but still within 24 hours
             var toRevoke=await _db.Transactions
                 .Where(t=>t.TransactionTime>=cutoff
                          && t.Status=="Active"
@@ -90,7 +89,7 @@ public class IngestionService
                 });
             }
             await _db.SaveChangesAsync();
-            // Finalize transactions older than 24 hours
+            // Finalize transactions which are older than 24 hours
             var toFinalize=await _db.Transactions
                 .Where(t=>t.TransactionTime<cutoff
                          && t.Status=="Active")
@@ -121,7 +120,7 @@ public class IngestionService
             throw;
         }
     }
-    
+
     private List<(string FieldName, string OldValue, string NewValue)> DetectChanges(Transaction existing, Transaction incoming)
     {
         var changes=new List<(string,string,string)>();
