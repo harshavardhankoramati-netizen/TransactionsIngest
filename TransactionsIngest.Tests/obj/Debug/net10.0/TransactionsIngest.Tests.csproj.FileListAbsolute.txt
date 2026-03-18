@@ -149,3 +149,4 @@
 /Users/HarshaVardhanK/Downloads/TransactionsIngest/TransactionsIngest.Tests/obj/Debug/net10.0/ref/TransactionsIngest.Tests.dll
 /Users/HarshaVardhanK/Downloads/TransactionsIngest/TransactionsIngest.Tests/obj/Debug/net10.0/TransactionsIngest.Tests.sourcelink.json
 /Users/HarshaVardhanK/Downloads/TransactionsIngest/TransactionsIngest.Tests/bin/Debug/net10.0/appsettings.json
+/Users/HarshaVardhanK/Downloads/TransactionsIngest/TransactionsIngest.Tests/bin/Debug/net10.0/Microsoft.Extensions.Configuration.Binder.dll

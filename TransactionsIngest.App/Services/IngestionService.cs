@@ -107,7 +107,6 @@ public class IngestionService
             }
             await _db.SaveChangesAsync();
             await dbTransaction.CommitAsync();
-
             Console.WriteLine($"Ingestion complete.");
             Console.WriteLine($"Processed:{incoming.Count} transactions");
             Console.WriteLine($"Revoked:{toRevoke.Count}");

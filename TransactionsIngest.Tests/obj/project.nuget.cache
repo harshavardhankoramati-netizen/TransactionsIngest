@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dRh9Te7q738=",
+  "dgSpecHash": "HmZ9fo+gy/E=",
   "success": true,
   "projectFilePath": "/Users/HarshaVardhanK/Downloads/TransactionsIngest/TransactionsIngest.Tests/TransactionsIngest.Tests.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "/Users/HarshaVardhanK/.nuget/packages/microsoft.extensions.caching.memory/10.0.5/microsoft.extensions.caching.memory.10.0.5.nupkg.sha512",
     "/Users/HarshaVardhanK/.nuget/packages/microsoft.extensions.configuration/10.0.5/microsoft.extensions.configuration.10.0.5.nupkg.sha512",
     "/Users/HarshaVardhanK/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.5/microsoft.extensions.configuration.abstractions.10.0.5.nupkg.sha512",
+    "/Users/HarshaVardhanK/.nuget/packages/microsoft.extensions.configuration.binder/10.0.5/microsoft.extensions.configuration.binder.10.0.5.nupkg.sha512",
     "/Users/HarshaVardhanK/.nuget/packages/microsoft.extensions.configuration.fileextensions/10.0.5/microsoft.extensions.configuration.fileextensions.10.0.5.nupkg.sha512",
     "/Users/HarshaVardhanK/.nuget/packages/microsoft.extensions.configuration.json/10.0.5/microsoft.extensions.configuration.json.10.0.5.nupkg.sha512",
     "/Users/HarshaVardhanK/.nuget/packages/microsoft.extensions.dependencyinjection/10.0.5/microsoft.extensions.dependencyinjection.10.0.5.nupkg.sha512",
