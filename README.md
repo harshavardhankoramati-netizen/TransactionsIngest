@@ -53,19 +53,6 @@ dotnet test
 
 ---
 
-## Configuration
-
-`appsettings.json` supports the following settings:
-
-| Key | Description |
-|-----|-------------|
-| `ConnectionStrings:DefaultConnection` | SQLite connection string |
-| `ApiSettings:BaseUrl` | Base URL of the transactions API |
-| `ApiSettings:TransactionsPath` | API endpoint path |
-| `ApiSettings:UseMock` | Set to `true` to use mock data |
-
----
-
 ## Approach
 
 ### Upsert
